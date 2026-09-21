@@ -26,6 +26,48 @@ Connect the blocks to their appropriate signals, which is shown below as:
 
 <img width="485" height="212" alt="Step 2" src="https://github.com/user-attachments/assets/0058d524-d1fa-4dcc-85be-cbac6838bf29" />
 
+- Step 3:
+Add a Logical Operator block to the model. Use the default Operator value, AND. Then, connect the appropriate Compare to Constant blocks to create the statement:
+speed >= 35 km/h AND
+  abs(lateral acceleration) >= 3 m/s2
+Connect the output of the Logical Operator block to the Signal Assessment block.
+
+<img width="378" height="234" alt="Step 3" src="https://github.com/user-attachments/assets/e63abbc2-c562-42d5-a015-ab728778a47d" />
+
+- Step 4:
+Add a second Logical Operator block to the model. Change its Operator to OR.
+Connect the blocks to create the statement:
+(speed >= 100 km/h) OR (speed >= 35 km/h AND
+  abs(lateral acceleration) >= 3 m/s2)
+Connect the output of the OR Logical Operator block to the Signal Assessment block.
+
+<img width="374" height="170" alt="Step 4" src="https://github.com/user-attachments/assets/f6ed94ff-87c8-4d4a-bbea-f4b4014bed36" />
+
+- Step 5:
+
+The final step is to add the logical statement, as follows:
+if (speed >= 100 km/h) OR 
+ (speed >= 35 km/h AND abs(lateral acceleration) >= 3 m/s2)
+    use mode 2
+else
+    use mode 1
+end
+
+Add a Switch block to the model and connect the output from the previous step to the control signal. 
+Add two Constant blocks, with values 1 and 2, to represent the driving modes. 
+Connect the blocks to the appropriate locations on the Switch block.
+
+<img width="379" height="216" alt="Step 5" src="https://github.com/user-attachments/assets/0157f9a1-5fad-4799-b9c7-234cf3c47ca6" />
+
+
+
+
+
+
+
+
+
+
 
 
 
