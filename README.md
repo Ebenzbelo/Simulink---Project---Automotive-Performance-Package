@@ -7,6 +7,7 @@ Rapid development of technology has made it possible for motor vehicles to have 
 This project shows a simplified system that responds to two main sensors: 
 - speed
 - lateral acceleration
+- 
 These sensors determines a high performance and economy mode.
 The Signal Editor Block is used for the model simulation.
 NB: The Signal Editor Block is another type of source like Sine Wave and Ramp.
