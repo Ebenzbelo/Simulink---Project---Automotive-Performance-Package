@@ -19,11 +19,16 @@ Add an Abs block to take the absolute value of lateral acceleration.
 <img width="456" height="143" alt="Step 1" src="https://github.com/user-attachments/assets/f809f5db-c9d6-4d54-b1c3-66de1e6941ab" />
 Step 2:
 Add three Compare to Constant blocks to the model. Set their conditions to
->= 100
->= 35
->= 3
+ ">= 100, >= 35, >= 3"
 Connect the blocks to their appropriate signals, which is shown below as:
-<img width="485" height="212" alt="Step 2" src="https://github.com/user-attachments/assets/94ec646d-56bc-469d-9055-a61c2826de16" />
+<img width="485" height="212" alt="Step 2" src="https://github.com/user-attachments/assets/0058d524-d1fa-4dcc-85be-cbac6838bf29" />
+
+
+
+
+
+
+
 
 
 
