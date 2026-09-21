@@ -13,14 +13,17 @@ The Signal Editor Block is used for the model simulation.
 NB: The Signal Editor Block is another type of source like Sine Wave and Ramp.
 
 ## Methodology
-Step 1:
+- Step 1:
 Add an Abs block to take the absolute value of lateral acceleration.
 (Simulink > Math Operations > Abs)
+
 <img width="456" height="143" alt="Step 1" src="https://github.com/user-attachments/assets/f809f5db-c9d6-4d54-b1c3-66de1e6941ab" />
-Step 2:
+
+- Step 2:
 Add three Compare to Constant blocks to the model. Set their conditions to
  ">= 100, >= 35, >= 3"
 Connect the blocks to their appropriate signals, which is shown below as:
+
 <img width="485" height="212" alt="Step 2" src="https://github.com/user-attachments/assets/0058d524-d1fa-4dcc-85be-cbac6838bf29" />
 
 
