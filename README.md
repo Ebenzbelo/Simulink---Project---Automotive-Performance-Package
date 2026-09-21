@@ -59,7 +59,9 @@ Connect the blocks to the appropriate locations on the Switch block.
 
 <img width="379" height="216" alt="Step 5" src="https://github.com/user-attachments/assets/0157f9a1-5fad-4799-b9c7-234cf3c47ca6" />
 
-
+## Conclusion
+This project consist of fundamentals of dynamics system modeling, from Mathematical Operators to Basic Logics and Conditional Statements. This is to lay foundational of the project element. 
+The aim of the project was achieved by using the blocks and components from the Simulink library. 
 
 
 
